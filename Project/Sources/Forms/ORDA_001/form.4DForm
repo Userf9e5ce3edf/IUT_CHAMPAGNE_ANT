@@ -1,0 +1,438 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"left": 33,
+					"top": 28,
+					"width": 657,
+					"height": 380,
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"method": "ObjectMethods/List Box.4dm",
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.utilisateurs",
+					"currentItemSource": "Form:C1466.utilisateurSelectionnee",
+					"columns": [
+						{
+							"header": {
+								"name": "Entête3",
+								"text": "ID"
+							},
+							"name": "colID",
+							"dataSource": "This:C1470.ID",
+							"footer": {
+								"name": "Pied4"
+							}
+						},
+						{
+							"header": {
+								"text": "Nom",
+								"name": "Entete"
+							},
+							"name": "Nom",
+							"footer": {
+								"name": "Pied1"
+							},
+							"dataSource": "This:C1470.Nom"
+						},
+						{
+							"header": {
+								"name": "Entête2",
+								"text": "Prenom"
+							},
+							"name": "Prenom",
+							"dataSource": "This:C1470.Prenom",
+							"footer": {
+								"name": "Pied2"
+							}
+						},
+						{
+							"header": {
+								"name": "Entête1",
+								"text": "Email"
+							},
+							"name": "ColEmail",
+							"footer": {
+								"name": "Pied3"
+							},
+							"dataSource": "This:C1470.EMail"
+						},
+						{
+							"header": {
+								"name": "Entête4",
+								"text": "Solde"
+							},
+							"name": "ColSolde",
+							"footer": {
+								"name": "Pied5"
+							},
+							"dataSource": "This:C1470.Solde"
+						}
+					]
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 15,
+					"left": 723,
+					"width": 530,
+					"height": 380
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "Nouveau Bidon",
+					"top": 40,
+					"left": 933,
+					"width": 99,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton.4dm"
+				},
+				"Texte": {
+					"type": "text",
+					"text": "text default",
+					"top": -5,
+					"left": -68,
+					"width": 48,
+					"height": 15
+				},
+				"tbPassword": {
+					"type": "input",
+					"left": 933,
+					"top": 226,
+					"width": 99,
+					"height": 16,
+					"dataSource": "Form:C1466.utilisateurAffiche.Password_Hash"
+				},
+				"tbSolde": {
+					"type": "input",
+					"left": 933,
+					"top": 190,
+					"width": 99,
+					"height": 16,
+					"dataSource": "Form:C1466.utilisateurAffiche.Solde",
+					"dataSourceTypeHint": "number"
+				},
+				"tbEmail": {
+					"type": "input",
+					"left": 933,
+					"top": 154,
+					"width": 99,
+					"height": 16,
+					"dataSource": "Form:C1466.utilisateurAffiche.EMail"
+				},
+				"tbPrenom": {
+					"type": "input",
+					"left": 933,
+					"top": 118,
+					"width": 99,
+					"height": 16,
+					"dataSource": "Form:C1466.utilisateurAffiche.Prenom"
+				},
+				"tbNom": {
+					"type": "input",
+					"left": 933,
+					"top": 82,
+					"width": 99,
+					"height": 16,
+					"dataSource": "Form:C1466.utilisateurAffiche.Nom"
+				},
+				"btn_enreg": {
+					"type": "button",
+					"text": "Enregistrer",
+					"top": 40,
+					"left": 1111,
+					"width": 104,
+					"height": 35,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btn_enreg.4dm"
+				},
+				"btn_del": {
+					"type": "button",
+					"text": "Supprimer",
+					"top": 90,
+					"left": 1111,
+					"width": 104,
+					"height": 35,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btn_del.4dm"
+				},
+				"btn_mod": {
+					"type": "button",
+					"text": "Modifier",
+					"top": 145,
+					"left": 1111,
+					"width": 104,
+					"height": 35,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btn_mod.4dm"
+				},
+				"Texte2": {
+					"type": "text",
+					"text": "Nom :",
+					"top": 83,
+					"left": 823,
+					"width": 65,
+					"height": 15
+				},
+				"Texte3": {
+					"type": "text",
+					"text": "Prenom :",
+					"top": 119,
+					"left": 823,
+					"width": 65,
+					"height": 15
+				},
+				"Texte4": {
+					"type": "text",
+					"text": "Email :",
+					"top": 155,
+					"left": 823,
+					"width": 65,
+					"height": 15
+				},
+				"Texte5": {
+					"type": "text",
+					"text": "Solde :",
+					"top": 191,
+					"left": 823,
+					"width": 65,
+					"height": 15
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "Paswd  :",
+					"top": 227,
+					"left": 823,
+					"width": 65,
+					"height": 15
+				},
+				"btn_new": {
+					"type": "button",
+					"text": "Nouveau",
+					"top": 262,
+					"left": 928,
+					"width": 104,
+					"height": 35,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/btn_new.4dm"
+				},
+				"List Box1": {
+					"type": "listbox",
+					"left": 33,
+					"top": 428,
+					"width": 663,
+					"height": 218,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.utilisateurAffiche.credits",
+					"columns": [
+						{
+							"header": {
+								"text": "Moyen de paiment",
+								"name": "col_mp"
+							},
+							"name": "Colonne1",
+							"footer": {
+								"name": "Pied6"
+							},
+							"dataSource": "This:C1470.Moyen_Paiement"
+						},
+						{
+							"header": {
+								"name": "col_montant",
+								"text": "Montant"
+							},
+							"name": "Colonne2",
+							"footer": {
+								"name": "Pied7"
+							},
+							"dataSource": "This:C1470.Montant"
+						},
+						{
+							"header": {
+								"name": "col_date",
+								"text": "Date Credit"
+							},
+							"name": "Colonne3",
+							"class": "",
+							"dataSource": "This:C1470.Date_Credit",
+							"footer": {
+								"name": "Pied8"
+							}
+						},
+						{
+							"header": {
+								"name": "col_heure",
+								"text": "Heure Credit"
+							},
+							"name": "Colonne4",
+							"dataSource": "This:C1470.Heure_Credit",
+							"footer": {
+								"name": "Pied9"
+							}
+						},
+						{
+							"header": {
+								"name": "col_id_borne",
+								"text": "ID Borne"
+							},
+							"name": "Colonne5",
+							"dataSource": "This:C1470.ID_Borne_Credit",
+							"footer": {
+								"name": "Pied10"
+							},
+							"width": 128
+						}
+					]
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 428,
+					"left": 723,
+					"width": 512,
+					"height": 218
+				},
+				"tbMP": {
+					"type": "input",
+					"left": 735,
+					"top": 450,
+					"width": 99,
+					"height": 16,
+					"dataSource": "Form:C1466.utilisateurAffiche.credits.Moyen_Paiement"
+				},
+				"tbMontant": {
+					"type": "input",
+					"left": 735,
+					"top": 486,
+					"width": 99,
+					"height": 16,
+					"dataSource": "Form:C1466.utilisateurAffiche.credits.Montant"
+				},
+				"tbDate": {
+					"type": "input",
+					"left": 735,
+					"top": 529,
+					"width": 99,
+					"height": 16,
+					"dataSource": "Form:C1466.utilisateurAffiche.credits.Date_Credit"
+				},
+				"tbHeure": {
+					"type": "input",
+					"left": 735,
+					"top": 565,
+					"width": 99,
+					"height": 16,
+					"dataSource": "Form:C1466.utilisateurAffiche.credits.Heure_Credit"
+				},
+				"tbIDBorne": {
+					"type": "input",
+					"left": 735,
+					"top": 601,
+					"width": 99,
+					"height": 16,
+					"dataSource": "Form:C1466.utilisateurAffiche.credits.ID_Borne_Credit"
+				},
+				"Bouton1": {
+					"type": "button",
+					"text": "Supprimer",
+					"top": 453,
+					"left": 889,
+					"width": 81,
+					"height": 28,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton1.4dm"
+				},
+				"Bouton2": {
+					"type": "button",
+					"text": "Enregistrer",
+					"top": 499,
+					"left": 888,
+					"width": 82,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton2.4dm"
+				},
+				"Bouton3": {
+					"type": "button",
+					"text": "Nouveau",
+					"top": 549,
+					"left": 889,
+					"width": 82,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton3.4dm"
+				}
+			}
+		}
+	],
+	"geometryStamp": 197,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+<html>
+    <head><title> HOME </title></head>
+    <body>
+        <h1>HOME</h1>
+
+        <!--#4DTEXT Current Time--><br>
+
+        <!--#4DIF (web_context.utilisateur_connecte#Null)-->
+            Bonjour <!--#4DTEXT web_context.utilisateur_connecte.Prenom-->
+            <a href="/4DACTION/web_Deconnexion"> Deconnection </a> <br>
+            <a href="/mon_compte.shtml"> Mon compte </a> <br>
+            <a href="/evenement.shtml"> Evenement </a><br>
+            <a href="/crediter.shtml"> Crediter </a><br>
+        <!--4DELSE-->
+            <a href="inscription.shtml"> Inscription </a> <br>
+            <a href="/evenement.shtml"> Evenement </a><br>
+            <a href="/crediter.shtml"> Crediter </a><br>
+            <a href="connection.shtml"> Connection </a> <br>
+        <!--#4DENDIF-->
+
+        <!--#4DSCRIPT/web_initHOME-->
+        <!--#4DTEXT Records in selection([EVENEMENT])-->
+        <br>
+        <!--#4DLOOP [EVENEMENT]-->
+            <!--#4DTEXT [EVENEMENT]Date_Debut--><br>
+        <!--#4DENDLOOP-->
+
+        <h1>Utilisateurs</h1>
+
+        <!--#4DSCRIPT/web_loadUsers-->
+        <!--#4DTEXT web_context.es_users.length--> Utilisateurs. <br>
+        <!--#4DEACH $current_user in web_context.es_users-->
+            <!--#4DTEXT $current_user.Nom --> <!--#4DTEXT $current_user.Prenom--> <br>
+        <!--#4DENDEACH-->
+
+    </body>
+</html>

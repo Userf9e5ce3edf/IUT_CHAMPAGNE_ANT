@@ -1,0 +1,26 @@
+{
+	"editors": [
+		{
+			"type": "form",
+			"id": 220,
+			"formName": "ORDA_001"
+		},
+		{
+			"type": "explorer"
+		},
+		{
+			"type": "toolbox"
+		},
+		{
+			"type": "structure"
+		},
+		{
+			"type": "method",
+			"id": 2147483623,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "wForm_Connexion"
+			}
+		}
+	]
+}

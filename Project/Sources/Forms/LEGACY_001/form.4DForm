@@ -1,0 +1,198 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"left": 12,
+					"top": 21,
+					"width": 294,
+					"height": 404,
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"method": "ObjectMethods/List Box.4dm",
+					"listboxType": "currentSelection",
+					"table": "EVENEMENT",
+					"columns": [
+						{
+							"header": {
+								"text": "Libelle",
+								"name": "Libelle",
+								"dataSource": ""
+							},
+							"name": "Colonne1",
+							"footer": {
+								"name": "Pied1"
+							},
+							"dataSource": "[EVENEMENT:10]Libelle:2"
+						},
+						{
+							"header": {
+								"name": "Date_Début",
+								"text": "DateDebut"
+							},
+							"name": "Colonne2",
+							"footer": {
+								"name": "Pied2"
+							},
+							"width": 148,
+							"dataSource": "[EVENEMENT:10]Date_Debut:3"
+						}
+					]
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 27,
+					"left": 310,
+					"width": 334,
+					"height": 204
+				},
+				"Texte": {
+					"type": "text",
+					"text": "Libelle:",
+					"top": 37,
+					"left": 326,
+					"width": 78,
+					"height": 15
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "Date Début :",
+					"top": 76,
+					"left": 328,
+					"width": 65,
+					"height": 15
+				},
+				"BoutonEnregistrer": {
+					"type": "button",
+					"text": "Enregistrer",
+					"top": 141,
+					"left": 525,
+					"width": 79,
+					"height": 35,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/BoutonEnregistrer.4dm"
+				},
+				"Zone de saisie": {
+					"type": "input",
+					"left": 482,
+					"top": 36,
+					"width": 104,
+					"height": 16,
+					"dataSource": "[EVENEMENT:10]Libelle:2"
+				},
+				"Zone de saisie1": {
+					"type": "input",
+					"left": 480,
+					"top": 73,
+					"width": 106,
+					"height": 16,
+					"dataSource": "[EVENEMENT:10]Date_Debut:3"
+				},
+				"Zone de saisie2": {
+					"type": "input",
+					"left": 480,
+					"top": 115,
+					"width": 104,
+					"height": 16,
+					"dataSource": "[EVENEMENT:10]Date_Fin:4"
+				},
+				"Texte2": {
+					"type": "text",
+					"text": "Date Fin",
+					"top": 116,
+					"left": 326,
+					"width": 78,
+					"height": 15
+				},
+				"BoutonSupprimer": {
+					"type": "button",
+					"text": "Supprimer",
+					"top": 141,
+					"left": 424,
+					"width": 79,
+					"height": 35,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/BoutonSupprimer.4dm"
+				},
+				"BoutonAjouter": {
+					"type": "button",
+					"text": "Ajouter",
+					"top": 141,
+					"left": 326,
+					"width": 78,
+					"height": 35,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/BoutonAjouter.4dm"
+				},
+				"BoutonModifier": {
+					"type": "button",
+					"text": "Modifier",
+					"top": 191,
+					"left": 318,
+					"width": 102,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/BoutonModifier.4dm"
+				}
+			}
+		}
+	],
+	"geometryStamp": 52,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}

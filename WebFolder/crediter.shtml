@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title> Crediter </title>
+		<link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/styles.css?vers=1">
+
+
+		<script src="/vendors/jquery.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/TableDnD/0.9.1/jquery.tablednd.js" integrity="sha256-d3rtug+Hg1GZPB7Y/yTcRixO/wlI78+2m08tosoRn7A=" crossorigin="anonymous"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script> -->
+
+		<script src="/scripts/script.js?vers=6"></script>
+
+	</head>
+	<body>
+
+			<h1> Crediter</h1>
+
+            Solde : <!--#4DTEXT web_context.utilisateur_connecte.Solde-->
+			<div class="container mt-3">
+
+				<form id="form_crediter" action="">
+
+					<div class="mb-3">
+						<label for="w_montant" class="form-label"> Montant a crediter </label>
+						<input name="w_montant" type="number" step="0.01" class="form-control" id="w_montant" placeholder="Montant a crediter">
+					</div>
+
+					<div class="mb-3">
+						<label for="w_nom_prenom" class="form-label"> Nom et Prenom </label>
+						<input name="w_nom_prenom" type="text" class="form-control" id="w_nom_prenom" placeholder="Nom et Prenom">
+					</div>
+
+					<div class="mb-3">
+						<label for="w_numero_carte" class="form-label"> Numero de la carte </label>
+						<input name="w_numero_carte" type="number" class="form-control" id="w_numero_carte" placeholder="Numero de la carte">
+					</div>
+
+					<div class="mb-3">
+						<label for="w_ccv" class="form-label"> CCV </label>
+						<input name="w_ccv" type="number" class="form-control" id="w_ccv" placeholder="CCV">
+					</div>
+
+					<div class="mb-3">
+						<label for="w_date_expiration" class="form-label"> Date d'expiration </label>
+						<input name="w_date_expiration" type="date" class="form-control" id="w_date_expiration" placeholder="Date d'expiration">
+					</div>
+
+					<input type="submit" class="btn btn-primary" id="btn_crediter" value="Crediter">
+				</form>				
+			</div>
+	</body>
+	<script src="/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+</html>
